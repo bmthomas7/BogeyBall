@@ -1,0 +1,6 @@
+C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Models\bin\Debug\BogeyBall.Models.dll
+C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Models\bin\Debug\BogeyBall.Models.pdb
+C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Models\obj\Debug\BogeyBall.Models.csprojAssemblyReference.cache
+C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Models\obj\Debug\BogeyBall.Models.csproj.CoreCompileInputs.cache
+C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Models\obj\Debug\BogeyBall.Models.dll
+C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Models\obj\Debug\BogeyBall.Models.pdb
