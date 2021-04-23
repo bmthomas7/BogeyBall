@@ -22,6 +22,7 @@ namespace BogeyBall.Data
         public int Id { get; set; }
 
         [Required]
+        [Range(1,100, ErrorMessage ="Please Enter a Number between 1 and 100")]
         public int Stroke { get; set; }
 
         public NameOfScoring Scoring { get; set; }

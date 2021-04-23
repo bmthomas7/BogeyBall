@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,6 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CourseCreate.cs" />
+    <Compile Include="CourseDetail.cs" />
+    <Compile Include="CourseEdit.cs" />
+    <Compile Include="CourseListItem.cs" />
+    <Compile Include="PlayerCreate.cs" />
+    <Compile Include="PlayerDetail.cs" />
+    <Compile Include="PlayerEdit.cs" />
+    <Compile Include="PlayerListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

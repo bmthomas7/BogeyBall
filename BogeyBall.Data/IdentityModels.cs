@@ -39,17 +39,17 @@ namespace BogeyBall.Data
         public DbSet<Hole> Holes { get; set; }
 
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder
-                .Conventions
-                .Remove<PluralizingTableNameConvention>();
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder
+        //        .Conventions
+        //        .Remove<PluralizingTableNameConvention>();
 
-            modelBuilder
-                .Configurations
-                .Add(new IdentityUserLoginConfiguration())
-                .Add(new IdentityUserRoleConfiguration());
-        }
+        //    modelBuilder
+        //        .Configurations
+        //        .Add(new IdentityUserLoginConfiguration())
+        //        .Add(new IdentityUserRoleConfiguration());
+        //}
     }
 
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
@@ -64,7 +64,7 @@ namespace BogeyBall.Data
     {
         public IdentityUserRoleConfiguration()
         {
-            HasKey(iul => iul.UserId);
+            HasKey(iur => iur.UserId);
         }
     }
 
