@@ -46,6 +46,10 @@
     <Compile Include="CourseDetail.cs" />
     <Compile Include="CourseEdit.cs" />
     <Compile Include="CourseListItem.cs" />
+    <Compile Include="HoleCreate.cs" />
+    <Compile Include="HoleDetail.cs" />
+    <Compile Include="HoleEdit.cs" />
+    <Compile Include="HoleListItem.cs" />
     <Compile Include="PlayerCreate.cs" />
     <Compile Include="PlayerDetail.cs" />
     <Compile Include="PlayerEdit.cs" />

@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CourseService.cs" />
+    <Compile Include="HoleService.cs" />
     <Compile Include="PlayerServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -25,7 +25,25 @@ namespace BogeyBall.Services
                     Id = model.CourseId,
                     Name = model.CourseName,                    
                     Location = model.CourseLocation,
-                    TeeTime = model.CourseTeeTime
+                    TeeTime = model.CourseTeeTime,
+                    HoleOne = model.CourseHoleOne,
+                    HoleTwo = model.CourseHoleTwo,
+                    HoleThree = model.CourseHoleThree,
+                    HoleFour = model.CourseHoleFour,
+                    HoleFive = model.CourseHoleFive,
+                    HoleSix = model.CourseHoleSix,
+                    HoleSeven = model.CourseHoleSeven,
+                    HoleEight = model.CourseHoleEight,
+                    HoleNine = model.CourseHoleNine,
+                    HoleTen = model.CourseHoleTen,
+                    HoleEleven = model.CourseHoleEleven,
+                    HoleTwelve = model.CourseHoleTwelve,
+                    HoleThirteen = model.CourseHoleThirteen,
+                    HoleFourteen = model.CourseHoleFourteen,
+                    HoleFifteen = model.CourseHoleFifteen,
+                    HoleSixteen = model.CourseHoleSixteen,
+                    HoleSeventeen = model.CourseHoleSeventeen,
+                    HoleEighteen = model.CourseHoleEighteen
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -71,7 +89,25 @@ namespace BogeyBall.Services
                         CourseId = entity.Id,
                         CourseName = entity.Name,
                         CourseLocation = entity.Location,
-                        CourseTeeTime = entity.TeeTime
+                        CourseTeeTime = entity.TeeTime,
+                        CourseHoleOne = entity.HoleOne,
+                        CourseHoleTwo = entity.HoleTwo,
+                        CourseHoleThree = entity.HoleThree,
+                        CourseHoleFour = entity.HoleFour,
+                        CourseHoleFive = entity.HoleFive,
+                        CourseHoleSix = entity.HoleSix,
+                        CourseHoleSeven = entity.HoleSeven,
+                        CourseHoleEight = entity.HoleEight,
+                        CourseHoleNine = entity.HoleNine,
+                        CourseHoleTen = entity.HoleTen,
+                        CourseHoleEleven = entity.HoleEleven,
+                        CourseHoleTwelve = entity.HoleTwelve,
+                        CourseHoleThirteen = entity.HoleThirteen,
+                        CourseHoleFourteen = entity.HoleFourteen,
+                        CourseHoleFifteen = entity.HoleFifteen,
+                        CourseHoleSixteen = entity.HoleSixteen,
+                        CourseHoleSeventeen = entity.HoleSeventeen,
+                        CourseHoleEighteen = entity.HoleEighteen
                     };
             }
 
@@ -104,8 +140,9 @@ namespace BogeyBall.Services
                         .Single(e => e.Id == courseId );
 
                 ctx.Courses.Remove(entity);
-
-                return ctx.SaveChanges() == 1;
+                                                     
+                return ctx.SaveChanges() == 1;                    
+                    
             }
         }
 
