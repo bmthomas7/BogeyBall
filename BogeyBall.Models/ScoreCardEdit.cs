@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace BogeyBall.Models
 {
-    class HoleListItem
+    public class ScoreCardEdit
     {
+        public string ScoreCardPlayerName { get; set; }
+
+
     }
 }

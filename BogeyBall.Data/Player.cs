@@ -12,6 +12,8 @@ namespace BogeyBall.Data
         [Key]
         public int Id { get; set; }
 
+        public virtual ScoreCard ScoreCard { get; set; }
+
         [Required]
         public Guid OwnerId { get; set; }
 

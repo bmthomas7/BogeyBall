@@ -12,3 +12,17 @@ C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBal
 C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Tests\obj\Debug\BogeyBall.Tests.csproj.CopyComplete
 C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Tests\obj\Debug\BogeyBall.Tests.dll
 C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Tests\obj\Debug\BogeyBall.Tests.pdb
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\bin\Debug\BogeyBall.Tests.dll
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\bin\Debug\BogeyBall.Tests.pdb
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\obj\Debug\BogeyBall.Tests.csprojAssemblyReference.cache
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\obj\Debug\BogeyBall.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\obj\Debug\BogeyBall.Tests.csproj.CopyComplete
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\obj\Debug\BogeyBall.Tests.dll
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Tests\obj\Debug\BogeyBall.Tests.pdb

@@ -22,7 +22,7 @@ namespace BogeyBall.Services
             var entity =
                 new Course()
                 {
-                    Id = model.CourseId,
+                    //Id = model.CourseId,
                     Name = model.CourseName,                    
                     Location = model.CourseLocation,
                     TeeTime = model.CourseTeeTime,
@@ -46,12 +46,19 @@ namespace BogeyBall.Services
                     HoleEighteen = model.CourseHoleEighteen
                 };
 
+
+
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Courses.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
+
+        //public bool CreateCourseTotal(int total)
+        //{
+
+        //}
 
         public IEnumerable<CourseListItem> GetCourses()
         {

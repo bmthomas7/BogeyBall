@@ -4,3 +4,9 @@ C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBal
 C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Models\obj\Debug\BogeyBall.Models.csproj.CoreCompileInputs.cache
 C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Models\obj\Debug\BogeyBall.Models.dll
 C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Models\obj\Debug\BogeyBall.Models.pdb
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\bin\Debug\BogeyBall.Models.dll
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\bin\Debug\BogeyBall.Models.pdb
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\obj\Debug\BogeyBall.Models.csprojAssemblyReference.cache
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\obj\Debug\BogeyBall.Models.csproj.CoreCompileInputs.cache
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\obj\Debug\BogeyBall.Models.dll
+C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\obj\Debug\BogeyBall.Models.pdb

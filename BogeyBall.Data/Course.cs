@@ -9,16 +9,21 @@ namespace BogeyBall.Data
 {
     public class Course
     {
+
         [Key]
         public int Id { get; set; }
 
-        
-        public string Name { get; set; }
-
-        public string Location { get; set; }
+        public virtual ScoreCard ScoreCard { get; set; }
 
         [Required]
+        public string Name { get; set; }
+
+        [Required]
+        public string Location { get; set; }
+
         public DateTime TeeTime { get; set; }
+
+        public int HoleTotal { get; set; }
 
         [Required]
         [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]

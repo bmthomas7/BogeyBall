@@ -32,27 +32,135 @@
         <th>
             @Html.DisplayNameFor(model => model.CourseLocation)
         </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.CourseHoleOne)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleTwo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleThree)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleFour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleFive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleSix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleSeven)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleEight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleNine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleTen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleEleven)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleTwelve)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleThirteen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleFourteen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleFifteen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleSixteen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleSeventeen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseHoleEighteen)
+        </th>*@
         <th></th>
     </tr>
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseLocation)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.CourseId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.CourseId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.CourseId })
-            </td>
-        </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.CourseId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CourseName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CourseLocation)
+    </td>
+    @*<th>
+        @Html.DisplayFor(modelItem => item.CourseHoleOne)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleTwo)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleThree)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleFour)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleFive)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleSix)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleSeven)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleEight)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleNine)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleTen)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleEleven)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleTwelve)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleThirteen)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleFourteen)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleFifteen)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleSixteen)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleSeventeen)
+    </th>
+    <th>
+        @Html.DisplayFor(modelItem => item.CourseHoleEighteen)
+    </th>*@
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.CourseId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.CourseId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.CourseId })
+    </td>
+</tr>
     }
 
 </table>
