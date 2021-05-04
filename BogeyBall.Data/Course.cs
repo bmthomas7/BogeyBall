@@ -13,7 +13,7 @@ namespace BogeyBall.Data
         [Key]
         public int Id { get; set; }
 
-        public virtual ScoreCard ScoreCard { get; set; }
+        public virtual ICollection<ScoreCard> ScoreCardList { get; set; }
 
         [Required]
         public string Name { get; set; }

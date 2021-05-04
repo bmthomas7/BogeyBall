@@ -10,3 +10,8 @@ C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\obj\Debug\BogeyBall.Models.cspro
 C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\obj\Debug\BogeyBall.Models.csproj.CoreCompileInputs.cache
 C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\obj\Debug\BogeyBall.Models.dll
 C:\Users\Ben\Desktop\bogeyball\BogeyBall.Models\obj\Debug\BogeyBall.Models.pdb
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Models\bin\Debug\BogeyBall.Models.dll
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Models\bin\Debug\BogeyBall.Models.pdb
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Models\obj\Debug\BogeyBall.Models.csproj.CoreCompileInputs.cache
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Models\obj\Debug\BogeyBall.Models.dll
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Models\obj\Debug\BogeyBall.Models.pdb

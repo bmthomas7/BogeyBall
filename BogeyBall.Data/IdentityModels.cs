@@ -36,7 +36,7 @@ namespace BogeyBall.Data
         public DbSet<Player> Players { get; set; }
         public DbSet<ScoreCard> ScoreCards { get; set; }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<Hole> Holes { get; set; }
+//        public DbSet<Hole> Holes { get; set; }
 
 
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)

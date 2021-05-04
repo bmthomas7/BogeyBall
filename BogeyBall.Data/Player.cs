@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace BogeyBall.Data
         [Key]
         public int Id { get; set; }
 
-        public virtual ScoreCard ScoreCard { get; set; }
+        
 
         [Required]
         public Guid OwnerId { get; set; }
@@ -20,9 +21,12 @@ namespace BogeyBall.Data
         [Required]
         public int Handicap { get; set; }
 
-        [Required]
-        public string FullName { get; set; }
+        public virtual ICollection<ScoreCard> ScoreCardList { get; set; }
 
+        public Player()
+        {
+            ScoreCardList = new HashSet<ScoreCard>();
+        }
 
     }
 }

@@ -56,5 +56,11 @@
     <Compile Include="ScoreCardEdit.cs" />
     <Compile Include="ScoreCardListItem.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BogeyBall.Data\BogeyBall.Data.csproj">
+      <Project>{6dcebd45-2237-4f6b-8c87-8f72912c490d}</Project>
+      <Name>BogeyBall.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

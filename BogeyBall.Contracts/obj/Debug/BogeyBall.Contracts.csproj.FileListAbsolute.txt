@@ -4,3 +4,9 @@ C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBal
 C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.csproj.CoreCompileInputs.cache
 C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.dll
 C:\Users\bmtho\OneDrive\Desktop\Elevenfiftyprojects\elevenfiftyredbadge\BogeyBall.WebMVC\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.pdb
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Contracts\bin\Debug\BogeyBall.Contracts.dll
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Contracts\bin\Debug\BogeyBall.Contracts.pdb
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.csprojAssemblyReference.cache
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.dll
+C:\Users\bmtho\Source\Repos\bmthomas7\BogeyBall\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.pdb

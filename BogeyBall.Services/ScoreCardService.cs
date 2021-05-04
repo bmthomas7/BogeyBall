@@ -22,37 +22,37 @@ namespace BogeyBall.Services
             var entity =
                 new ScoreCard()
                 {
-                    //Id = model.CourseId,
-                    Id = model.ScoreCardId,
-                    fullname = model.,
-                    TeeTime = model.CourseTeeTime,
+                    //Id = model.ScoreCardId,
+                    PlayerList = model.PlayerList,
+                    //TeeTime = model.CourseTeeTime,
 
 
-                    //HoleOne = model.CourseHoleOne,
-                    //HoleTwo = model.CourseHoleTwo,
-                    //HoleThree = model.CourseHoleThree,
-                    //HoleFour = model.CourseHoleFour,
-                    //HoleFive = model.CourseHoleFive,
-                    //HoleSix = model.CourseHoleSix,
-                    //HoleSeven = model.CourseHoleSeven,
-                    //HoleEight = model.CourseHoleEight,
-                    //HoleNine = model.CourseHoleNine,
-                    //HoleTen = model.CourseHoleTen,
-                    //HoleEleven = model.CourseHoleEleven,
-                    //HoleTwelve = model.CourseHoleTwelve,
-                    //HoleThirteen = model.CourseHoleThirteen,
-                    //HoleFourteen = model.CourseHoleFourteen,
-                    //HoleFifteen = model.CourseHoleFifteen,
-                    //HoleSixteen = model.CourseHoleSixteen,
-                    //HoleSeventeen = model.CourseHoleSeventeen,
-                    //HoleEighteen = model.CourseHoleEighteen
+                    ScoreOne = model.ScoreCardScoreOne,
+                    ScoreTwo = model.ScoreCardScoreTwo,
+                    ScoreThree = model.ScoreCardScoreThree,
+                    ScoreFour = model.ScoreCardScoreFour,
+                    ScoreFive = model.ScoreCardScoreFive,
+                    ScoreSix = model.ScoreCardScoreSix,
+                    ScoreSeven = model.ScoreCardScoreSeven,
+                    ScoreEight = model.ScoreCardScoreEight,
+                    ScoreNine = model.ScoreCardScoreNine,
+                    ScoreTen = model.ScoreCardScoreTen,
+                    ScoreEleven = model.ScoreCardScoreEleven,
+                    ScoreTwelve = model.ScoreCardScoreTwelve,
+                    ScoreThirteen = model.ScoreCardScoreThirteen,
+                    ScoreFourteen = model.ScoreCardScoreFourteen,
+                    ScoreFifteen = model.ScoreCardScoreFifteen,
+                    ScoreSixteen = model.ScoreCardScoreSixteen,
+                    ScoreSeventeen = model.ScoreCardScoreSeventeen,
+                    ScoreEighteen = model.ScoreCardScoreEighteen,
+                    
                 };
 
 
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Courses.Add(entity);
+                ctx.ScoreCards.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
@@ -62,20 +62,20 @@ namespace BogeyBall.Services
 
         //}
 
-        public IEnumerable<CourseListItem> GetCourses()
+        public IEnumerable<ScoreCardListItem> GetScoreCard()
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var query =
                     ctx
-                        .Courses
+                        .ScoreCards
                         .Select(
                             e =>
-                                new CourseListItem
+                                new ScoreCardListItem
                                 {
-                                    CourseId = e.Id,
-                                    CourseName = e.Name,
-                                    CourseLocation = e.Location
+                                    ScoreCardId = e.Id,
+                                    ScoreCardCourseName = e.PlayerList.ToString(),
+                                    ScoreCardPlayerName = e.CourseList.ToString()
                                 }
 
 
@@ -84,22 +84,22 @@ namespace BogeyBall.Services
             }
         }
 
-        public CourseDetail GetCourseById(int id)
+        public ScoreCardDetail GetScoreCardById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                    .Courses
+                    .ScoreCards
                     .Single(e => e.Id == id);
                 return
-                    new CourseDetail
+                    new ScoreCardDetail
                     {
-                        CourseId = entity.Id,
-                        CourseName = entity.Name,
-                        CourseLocation = entity.Location,
-                        CourseTeeTime = entity.TeeTime,
-                        CourseHoleOne = entity.HoleOne,
+                        ScoreCardId = entity.Id,
+                        ScoreCardCourseName = entity.CourseList.ToString(),
+                        ScoreCardPlayerName = entity.PlayerList.ToString(),
+                        //CourseTeeTime = entity.TeeTime,
+                        ScoreCardHoleOne = entity.HoleOne,
                         CourseHoleTwo = entity.HoleTwo,
                         CourseHoleThree = entity.HoleThree,
                         CourseHoleFour = entity.HoleFour,

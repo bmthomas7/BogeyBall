@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BogeyBall.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,6 +15,11 @@ namespace BogeyBall.Models
         public int ScoreCardId { get; set; }
 
         public string ScoreCardCourseName { get; set; }
+
+        public ICollection<Player> PlayerList { get; set; }
+
+        //public ICollection<Course> TeeTimeList { get; set }
+
 
         public string ScoreCardPlayerName { get; set; }
 
