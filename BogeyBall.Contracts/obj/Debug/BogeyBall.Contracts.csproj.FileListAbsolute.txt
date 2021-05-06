@@ -9,4 +9,3 @@ C:\Users\bmtho\source\repos\bmthomas7\BogeyBall\BogeyBall.Contracts\bin\Debug\Bo
 C:\Users\bmtho\source\repos\bmthomas7\BogeyBall\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.csproj.CoreCompileInputs.cache
 C:\Users\bmtho\source\repos\bmthomas7\BogeyBall\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.dll
 C:\Users\bmtho\source\repos\bmthomas7\BogeyBall\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.pdb
-C:\Users\bmtho\source\repos\bmthomas7\BogeyBall\BogeyBall.Contracts\obj\Debug\BogeyBall.Contracts.csprojAssemblyReference.cache
