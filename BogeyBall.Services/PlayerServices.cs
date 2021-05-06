@@ -24,7 +24,11 @@ namespace BogeyBall.Services
                 new Player()
                 {
                     OwnerId = _userId,
-                    FullName = model.PlayerName
+                    PlayerId = model.Id,
+                    
+                    FullName = model.PlayerName,
+                    //Handicap = model.
+        
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -46,8 +50,9 @@ namespace BogeyBall.Services
                             e =>
                                 new PlayerListItem
                                 {
-                                    PlayerId = e.Id,
+                                    PlayerId = e.PlayerId,
                                     PlayerName = e.FullName
+
 
                                 }
 
@@ -64,11 +69,11 @@ namespace BogeyBall.Services
                 var entity =
                     ctx
                     .Players
-                    .Single(e => e.Id == id && e.OwnerId == _userId);
+                    .Single(e => e.PlayerId == id && e.OwnerId == _userId);
                 return
                     new PlayerDetail
                     {
-                        PlayerId = entity.Id,
+                        PlayerId = entity.PlayerId,
                         PlayerName = entity.FullName
                     };
             }
@@ -82,9 +87,9 @@ namespace BogeyBall.Services
                 var entity =
                     ctx
                         .Players
-                        .Single(e => e.Id == model.PlayerId && e.OwnerId == _userId);
+                        .Single(e => e.PlayerId == model.PlayerId && e.OwnerId == _userId);
 
-                entity.Id = model.PlayerId;
+                entity.PlayerId = model.PlayerId;
                 entity.FullName = model.PlayerName;
 
                 return ctx.SaveChanges() == 1;
@@ -98,7 +103,7 @@ namespace BogeyBall.Services
                 var entity =
                     ctx
                         .Players
-                        .Single(e => e.Id == playerId && e.OwnerId == _userId);
+                        .Single(e => e.PlayerId == playerId && e.OwnerId == _userId);
 
                 ctx.Players.Remove(entity);
 

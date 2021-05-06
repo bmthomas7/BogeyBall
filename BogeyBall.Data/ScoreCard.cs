@@ -10,20 +10,33 @@ namespace BogeyBall.Data
 {
     public class ScoreCard
     {
-        [Key]
-        public int Id { get; set; }
+     
+        public int ScoreCardId { get; set; }
 
-        public int MyProperty { get; set; }
+        [ForeignKey("Course")]
+        public int CourseId { get; set; }
 
-        public virtual ICollection<Player> PlayerList { get; set; }
+        public virtual Course Course { get; set; }
 
-        public virtual ICollection<Course> CourseList { get; set; }
+        [ForeignKey("Player")]
+        public int PlayerId { get; set; }
+        public virtual Player Player { get; set; }
 
-        public ScoreCard()
-        {
-            PlayerList = new HashSet<Player>();
-            CourseList = new HashSet<Course>();
-        }
+        public int Handicap { get; set; }
+
+        //public virtual ICollection<Player> PlayerList { get; set; }
+
+        //public virtual ICollection<Course> CourseList { get; set; }
+
+        public int ScoreTotal { get; set; }
+
+        public int HoleTotal { get; set; }
+
+        //public ScoreCard()
+        //{
+        //    PlayerList = new HashSet<Player>();
+        //    CourseList = new HashSet<Course>();
+        //}
 
         //[Required]
         //public int Hole { get; set; }
@@ -31,7 +44,6 @@ namespace BogeyBall.Data
         //[Required]
         //public string Course { get; set; }
 
-        public virtual Course Course { get; set; }
         // this is where alot of foreign keys come into place
 
         [Required]
@@ -88,5 +100,66 @@ namespace BogeyBall.Data
         [Required]
         [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
         public int ScoreEighteen { get; set; }
+
+
+
+
+
+
+
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleOne { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleTwo { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleThree { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleFour { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleFive { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleSix { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleSeven { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleEight { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleNine { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleTen { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleEleven { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleTwelve { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleThirteen { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleFourteen { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleFifteen { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleSixteen { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleSeventeen { get; set; }
+        [Required]
+        [Range(1, 100, ErrorMessage = "Please Enter a Number between 1 and 100")]
+        public int HoleEighteen { get; set; }
     }
 }

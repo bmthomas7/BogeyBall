@@ -71,7 +71,7 @@ namespace BogeyBall.WebMVC.Controllers
                 {
                     CourseName = detail.CourseName,
                     CourseId = detail.CourseId,
-                    CourseTeeTime = detail.CourseTeeTime
+                    //CourseTeeTime = detail.CourseTeeTime
                 };
 
             return View(model);

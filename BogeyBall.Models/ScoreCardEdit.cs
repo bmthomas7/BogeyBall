@@ -8,7 +8,9 @@ namespace BogeyBall.Models
 {
     public class ScoreCardEdit
     {
+        public int ScoreCardId { get; set; }
         public string ScoreCardPlayerName { get; set; }
+        public string ScoreCardCourseName { get; set; }
 
 
     }

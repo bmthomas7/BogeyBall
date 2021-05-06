@@ -1,0 +1,171 @@
+﻿@model IEnumerable<BogeyBall.Models.ScoreCardListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @TempData["SaveResult"]
+    </div>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ScoreCardId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScoreCardCourseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScoreCardPlayerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.ScoreCardScoreTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScoreCardHandicap)
+        </th>
+
+        @*<th>
+            <p>Hole 1</p>
+        </th>
+        <th>
+            <p>Hole 2</p>
+        </th>
+        <th>
+            <p>Hole 3</p>
+        </th>
+        <th>
+            <p>Hole 4</p>
+        </th>
+        <th>
+            <p>Hole 5</p>
+        </th>
+        <th>
+            <p>Hole 6</p>
+        </th>
+        <th>
+            <p>Hole 7</p>
+        </th>
+        <th>
+            <p>Hole 8</p>
+        </th>
+        <th>
+            <p>Hole 9</p>
+        </th>*@
+    
+
+        @foreach (var item in Model)
+        {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardCourseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardPlayerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardScoreTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHandicap)
+        </td>
+
+
+
+
+        @*<td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHoleOne)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHoleTwo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHoleThree)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHoleFour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHoleFive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHoleSix)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHoleSeven)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHoleEight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScoreCardHoleNine)
+        </td>*@
+
+
+        @*@foreach (var nextItem in Model)
+           {
+        <tr>
+               <td>
+                   @Html.DisplayFor(modelItem => nextItem.ScoreCardScoreOne)
+               </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.ScoreCardScoreTwo)
+               </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.ScoreCardScoreThree)
+               </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.ScoreCardScoreFour)
+               </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.ScoreCardScoreFive)
+               </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.ScoreCardScoreSix)
+               </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.ScoreCardScoreSeven)
+               </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.ScoreCardScoreEight)
+               </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.ScoreCardScoreNine)
+               </td>*@
+
+
+
+
+
+
+
+
+        }
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id = item.ScoreCardId }) |*@
+            @Html.ActionLink("Details", "Details", new { id = item.ScoreCardId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ScoreCardId })
+
+        </td>
+    </tr>
+
+    }
+
+</table>

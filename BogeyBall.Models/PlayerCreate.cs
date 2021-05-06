@@ -9,9 +9,16 @@ namespace BogeyBall.Models.PlayerModel
 {
     public class PlayerCreate
     {
-        [Required]
+        public int PlayerId { get; set; }
+        public int Id { get; set; }
         public string PlayerName { get; set; }
-        
+        public int ScoreCardId { get; set; }
+
+
+
+
+        //public int CourseId { get; set; }
+
 
     }
 }

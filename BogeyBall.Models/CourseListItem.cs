@@ -12,6 +12,8 @@ namespace BogeyBall.Models
         public string CourseName { get; set; }
         public string CourseLocation { get; set; }
 
+        public int CourseHoleTotal { get; set; }
+
         public int CourseHoleOne { get; set; }
 
         public int CourseHoleTwo { get; set; }

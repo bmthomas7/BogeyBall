@@ -15,6 +15,8 @@ namespace BogeyBall.Models
 
         public string ScoreCardCourseName { get; set; }
 
+        public int ScoreCardScoreTotal { get; set; }
+
         [Display(Name = "Hole 1")]
         public int ScoreCardScoreOne { get; set; }
 

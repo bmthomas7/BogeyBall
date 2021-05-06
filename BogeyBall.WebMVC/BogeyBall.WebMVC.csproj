@@ -248,11 +248,14 @@
     <Content Include="Views\Course\Details.cshtml" />
     <Content Include="Views\Course\Edit.cshtml" />
     <Content Include="Views\Course\Delete.cshtml" />
+    <Content Include="Views\ScoreCard\Index.cshtml" />
+    <Content Include="Views\ScoreCard\Create.cshtml" />
+    <Content Include="Views\ScoreCard\Details.cshtml" />
+    <Content Include="Views\ScoreCard\Edit.cshtml" />
+    <Content Include="Views\ScoreCard\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Hole\" />
-    <Folder Include="Views\ScoreCard\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
