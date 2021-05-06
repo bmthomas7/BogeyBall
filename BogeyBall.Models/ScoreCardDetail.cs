@@ -9,12 +9,13 @@ namespace BogeyBall.Models
 {
     public class ScoreCardDetail
     {
+        [Display(Name = "Id")]
         public int ScoreCardId { get; set; }
-
+        [Display(Name = "Player Name")]
         public string ScoreCardPlayerName { get; set; }
-
+        [Display(Name = "Course Name")]
         public string ScoreCardCourseName { get; set; }
-
+        [Display(Name = "Score Total")]
         public int ScoreCardScoreTotal { get; set; }
 
         [Display(Name = "Hole 1")]

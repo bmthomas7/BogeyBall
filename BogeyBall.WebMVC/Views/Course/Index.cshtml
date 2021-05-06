@@ -33,7 +33,7 @@
             @Html.DisplayNameFor(model => model.CourseLocation)
         </th>
         <th>
-            @Html.DisplayNameFor(Model => Model.CourseHoleTotal)
+            @Html.DisplayNameFor(Model => Model.CourseTeeTime)
         </th>
         @*<th>
             @Html.DisplayNameFor(model => model.CourseHoleOne)
@@ -105,8 +105,7 @@
         @Html.DisplayFor(modelItem => item.CourseLocation)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.CourseHoleTotal)
-    </td>
+        @Html.DisplayFor(modelItem => item.CourseTeeTime)
     @*<th>
         @Html.DisplayFor(modelItem => item.CourseHoleOne)
     </th>
@@ -163,8 +162,8 @@
     </th>*@
     <td>
         @Html.ActionLink("Edit", "Edit", new { id = item.CourseId }) |
-        @Html.ActionLink("Details", "Details", new { id = item.CourseId }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.CourseId })
+        @Html.ActionLink("Details", "Details", new { id = item.CourseId }) 
+        @*@Html.ActionLink("Delete", "Delete", new { id = item.CourseId })*@
     </td>
 </tr>
     }

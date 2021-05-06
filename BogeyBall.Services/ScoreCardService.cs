@@ -267,20 +267,20 @@ namespace BogeyBall.Services
             }
         }
 
-        public bool DeleteScoreCard(int ScoreCardId)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                        .ScoreCards
-                        .Single(e => e.ScoreCardId == ScoreCardId);
+        //public bool DeleteScoreCard(int ScoreCardId)
+        //{
+        //    using (var ctx = new ApplicationDbContext())
+        //    {
+        //        var entity =
+        //            ctx
+        //                .ScoreCards
+        //                .Single(e => e.ScoreCardId == ScoreCardId);
 
-                ctx.ScoreCards.Remove(entity);
+        //        ctx.ScoreCards.Remove(entity);
 
-                return ctx.SaveChanges() == 1;
+        //        return ctx.SaveChanges() == 1;
 
-            }
-        }
+        //    }
+        //}
     }
 }

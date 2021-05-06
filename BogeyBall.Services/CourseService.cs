@@ -79,6 +79,7 @@ namespace BogeyBall.Services
                                     CourseId = e.CourseId,
                                     CourseName = e.Name,
                                     CourseLocation = e.Location,
+                                    CourseTeeTime = e.TeeTime
                                     //CourseHoleTotal = e.HoleTotal
                                     //(e.HoleOne + e.HoleTwo + e.HoleThree
                                     //+ e.HoleFour + e.HoleFive + e.HoleSix + e.HoleSeven + e.HoleEight
@@ -148,21 +149,21 @@ namespace BogeyBall.Services
             }
         }
 
-        public bool DeleteCourse(int courseId)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                        .Courses
-                        .Single(e => e.CourseId == courseId );
+        //public bool DeleteCourse(int courseId)
+        //{
+        //    using (var ctx = new ApplicationDbContext())
+        //    {
+        //        var entity =
+        //            ctx
+        //                .Courses
+        //                .Single(e => e.CourseId == courseId );
 
-                ctx.Courses.Remove(entity);
+        //        ctx.Courses.Remove(entity);
                                                      
-                return ctx.SaveChanges() == 1;                    
+        //        return ctx.SaveChanges() == 1;                    
                     
-            }
-        }
+        //    }
+        //}
 
 
     }

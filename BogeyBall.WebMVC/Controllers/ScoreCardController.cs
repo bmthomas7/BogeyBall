@@ -112,18 +112,18 @@ namespace BogeyBall.WebMVC.Controllers
             return View(model);
         }
 
-        [HttpPost]
-        [ActionName("Delete")]  
-        [ValidateAntiForgeryToken]
-        public ActionResult DeletePost(int id)
-        {
-            var service = CreateScoreCardService();
+        //[HttpPost]
+        //[ActionName("Delete")]  
+        //[ValidateAntiForgeryToken]
+        //public ActionResult DeletePost(int id)
+        //{
+        //    var service = CreateScoreCardService();
 
-            service.DeleteScoreCard(id);
+        //    service.DeleteScoreCard(id);
 
-            TempData["SaveResult"] = "Score Card was Deleted";
+        //    TempData["SaveResult"] = "Score Card was Deleted";
 
-            return RedirectToAction("Index");
-        }
+        //    return RedirectToAction("Index");
+        //}
     }
 }

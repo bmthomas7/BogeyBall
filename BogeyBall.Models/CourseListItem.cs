@@ -11,7 +11,7 @@ namespace BogeyBall.Models
         public int CourseId { get; set; }
         public string CourseName { get; set; }
         public string CourseLocation { get; set; }
-
+        public DateTime CourseTeeTime { get; set; }
         public int CourseHoleTotal { get; set; }
 
         public int CourseHoleOne { get; set; }
